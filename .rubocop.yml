@@ -10,3 +10,21 @@ inherit_from: .rubocop_todo.yml
 # where the inspected file is and continue its way up to the root directory.
 #
 # See https://docs.rubocop.org/rubocop/configuration
+
+# 基本的に自動生成されるものはチェック対象から除外する
+AllCops:
+  Exclude:
+    - .git/*
+    - bin/*
+    - error_pages/**/*
+    - db/schema.rb
+    - db/fixtures/*
+    - node_modules/**/*
+    - lib/tasks/oneshot/archives/*
+    - tmp/**/*
+    - vendor/**/*
+  DisplayCopNames: true
+  NewCops: disable
+
+Style/Documentation:
+  Enabled: false
