@@ -178,7 +178,7 @@ test:
     default:
       database: app_test
       hosts:
-        - db:27017
+        - <%= ENV['MONGODB_HOST'] || 'db:27017' %>
       options:
         read:
           mode: :primary
