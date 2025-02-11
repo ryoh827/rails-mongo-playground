@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
-class User
-  include Mongoid::Document
+class User < ApplicationDocument
   include Mongoid::Timestamps
 
   field :name, type: String
