@@ -105,12 +105,15 @@ GEM
       reline (>= 0.3.8)
     drb (2.2.1)
     erubi (1.13.1)
+    fiber-storage (1.0.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
     graphiql-rails (1.10.0)
       railties
-    graphql (2.2.14)
+    graphql (2.4.9)
       base64
+      fiber-storage
+      logger
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
     importmap-rails (2.0.1)
@@ -127,6 +130,7 @@ GEM
       activesupport (>= 5.0.0)
     json (2.10.1)
     language_server-protocol (3.17.0.4)
+    logger (1.6.5)
     loofah (2.24.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
