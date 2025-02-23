@@ -5,6 +5,18 @@ updates:
     schedule:
       interval: daily
     open-pull-requests-limit: 10
+    groups:
+      prod-dependencies:
+        dependency-type: 'production'
+        exclude-pattern:
+          - 'mongo*'
+          - 'rails'
+      dev-dependencies:
+        dependency-type: 'development'
+      rails:
+        pattern: 'rails'
+      mongo:
+        pattern: 'mongo*'
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
