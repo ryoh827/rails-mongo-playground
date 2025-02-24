@@ -8,15 +8,17 @@ updates:
     groups:
       prod-dependencies:
         dependency-type: 'production'
-        exclude-pattern:
+        exclude-patterns:
           - 'mongo*'
           - 'rails'
       dev-dependencies:
         dependency-type: 'development'
       rails:
-        pattern: 'rails'
+        patterns: 
+          - 'rails'
       mongo:
-        pattern: 'mongo*'
+        patterns:
+          - 'mongo*'
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
