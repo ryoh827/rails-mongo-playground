@@ -5,4 +5,9 @@ class User < ApplicationDocument
 
   field :name, type: String
   field :age, type: Integer
+
+  def save(...)
+    pp "called save"
+    super
+  end
 end
